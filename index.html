@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>    
+        <div class="buttons">
+            <div class="row">
+                <button class="small">DEG</button>
+                <button class="small">F-E</button>
+            </div>
+            <div class="row">
+                <button class="small">MC</button>
+                <button class="small">MR</button>
+                <button class="small">M+</button>
+                <button class="small">M-</button>
+                <button class="small">MS</button>
+            </div>
+            <div class="row">
+                <button class="small">Trigonometry▼</button>
+                <button class="small">Function▼</button>
+            </div>
+            <div class="row">
+                <button>2<sup>nd</sup></button>
+                <button>π</button>
+                <button>e</button>
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="deleteLast()">⌫</button>
+            </div>
+            <div class="row">
+                <button>x<sup>2</sup></button>
+                <button>1/x</button>
+                <button>|x|</button>
+                <button>exp</button>
+                <button>mod</button>
+            </div>
+            <div class="row">
+                <button>√x</button>
+                <button>(</button>
+                <button>)</button>
+                <button>n!</button>
+                <button>/</button>
+            </div>
+            <div class="row">
+                <button>x<sup>y</sup></button>
+                <button onclick="appendCharacter('7')">7</button>
+                <button onclick="appendCharacter('8')">8</button>
+                <button onclick="appendCharacter('9')">9</button>
+                <button>*</button>
+            </div>
+            <div class="row">
+                <button>10<sup>x</sup></button>
+                <button onclick="appendCharacter('4')">4</button>
+                <button onclick="appendCharacter('5')">5</button>
+                <button onclick="appendCharacter('6')">6</button>
+                <button>-</button>
+            </div>
+            <div class="row">
+                <button>log</button>
+                <button onclick="appendCharacter('1')">1</button>
+                <button onclick="appendCharacter('2')">2</button>
+                <button onclick="appendCharacter('3')">3</button>
+                <button onclick="appendCharacter('+')">+</button>
+            </div>
+            <div class="row">
+                <button>ln</button>
+                <button>+/-</button>
+                <button>0</button>
+                <button>.</button>
+                <button class="equals" onclick="calculateResult()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
